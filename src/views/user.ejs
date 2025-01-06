@@ -14,40 +14,46 @@
   </head>
   <body>
     <div class="user-infor-contianer">
-      <div class="container">
-        <div class="row">
-          <div class="mb-3 col-6 mt-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="col-6"></div>
-          <div class="mb-3 col-6">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="col-6"></div>
-          <div class="col-6 mb-3">
-            <label for="userName" class="form-label">User Name</label>
-            <input type="text" class="form-control" id="userName" />
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+      <form method="POST" action="/user/create-user">
+        <div class="container">
+          <div class="row">
+            <div class="mb-3 col-6 mt-3">
+              <label for="Email1" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email1"
+                required
+                name="emailName"
+              />
+            </div>
+            <div class="col-6"></div>
+            <div class="mb-3 col-6">
+              <label for="Password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="Password"
+                name="passwordN"
+                required
+              />
+            </div>
+            <div class="col-6"></div>
+            <div class="col-6 mb-3">
+              <label for="userName" class="form-label">User Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                name="userName"
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
